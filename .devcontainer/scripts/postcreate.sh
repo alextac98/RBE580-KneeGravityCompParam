@@ -14,6 +14,6 @@ sudo groupmod -g $GROUP_ID user
 ###############################
 # Install python dependencies #
 ###############################
-pip install -e Vicon/. --no-warn-script-location
+pip install -e _Vicon --no-warn-script-location
 pip uninstall GaitCore -y
-pip install -e GaitCore/. --no-warn-script-location
+pip install -e _GaitCore/. --no-warn-script-location

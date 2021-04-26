@@ -1,6 +1,6 @@
 [submodule "GaitCore"]
-	path = GaitCore
+	path = _GaitCore
 	url = git@github.com:alextac98/AIM_GaitCore.git
 [submodule "Vicon"]
-	path = Vicon
+	path = _Vicon
 	url = git@github.com:alextac98/AIM_Vicon.git
