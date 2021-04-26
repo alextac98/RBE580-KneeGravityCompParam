@@ -1,5 +1,7 @@
 FROM python:3
 
+RUN apt update && apt install -y nano
+
 # Set up new user
 ARG USERNAME=user
 ARG USER_UID=1000
