@@ -13,6 +13,12 @@ RUN apt-get update \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
+# Python specific new user setup
+RUN printf "export PATH=/home/%s/.local/bin:\$PATH\n" "$USERNAME" >> /home/$USERNAME/.bashrc
+
 # Create Workspace
 ARG WORKSPACE=/home/$USERNAME/ws
 WORKDIR ${WORKSPACE}
+
+# Remove apt stuff
+RUN rm -rf /var/lib/apt/lists/*

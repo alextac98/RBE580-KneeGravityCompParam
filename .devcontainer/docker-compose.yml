@@ -11,7 +11,7 @@ services:
         GROUP_ID: ${GROUP_ID}  # Pass current group at build to avoid file permissions issues
     env_file: 
       - build.env
-      - display.env
+      # - display.env
     volumes:
       - ../.:/home/user/ws
       - /tmp/.X11-unix:/tmp/.X11-unix               # For display

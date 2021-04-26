@@ -29,3 +29,6 @@ printf "XDG_RUNTIME=%s\n" "$XDG_RUNTIME_DIR" >> $BUILD_ENV
 
 rm $XAUTH && touch $XAUTH
 xauth nlist $DISPLAY | sed -e 's/^..../ffff/' | xauth -f $XAUTH nmerge -
+
+DISPLAY=$(echo $DISPLAY)
+printf "DISPLAY=%s\n" "$DISPLAY" >> $BUILD_ENV
