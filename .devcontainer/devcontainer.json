@@ -41,10 +41,11 @@
 	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
 	"shutdownAction": "stopCompose",
 
-	// Run command locally before connecting to container
-	"initializeCommand": "bash .devcontainer/scripts/init.sh",
-
-	"postCreateCommand": "bash .devcontainer/scripts/postcreate.sh",
+	// Run scripts
+	"initializeCommand": 	"bash .devcontainer/scripts/init.sh",
+	"postCreateCommand": 	"bash .devcontainer/scripts/postcreate.sh",
+	"postStartCommand": 	"bash .devcontainer/scripts/poststart.sh",
+	"postAttachCommand": 	"bash .devcontainer/scripts/postattach.sh",
 
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "user",
