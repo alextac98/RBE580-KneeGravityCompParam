@@ -1,0 +1,6 @@
+[submodule "GaitCore"]
+	path = GaitCore
+	url = git@github.com:alextac98/AIM_GaitCore.git
+[submodule "ViconDev"]
+	path = ViconDev
+	url = git@github.com:alextac98/AIM-ViconDev.git
