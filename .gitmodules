@@ -4,3 +4,6 @@
 [submodule "Vicon"]
 	path = _Vicon
 	url = git@github.com:alextac98/AIM_Vicon.git
+[submodule "_GaitData"]
+	path = _GaitData
+	url = https://github.com/WPI-AIM/AIM_GaitData.git
